@@ -9,18 +9,18 @@ A Confederação Nacional de Natação precisa de um programa que leia o ano de 
 
 from datetime import date
 
-#calcular a idade
-idade = date.today().year - int(input('Ano de nascimento: '))
-print(f'O atleta tem {idade} anos.')
-#informa a categoria conforme a idade
+# calcular a idade
+idade = date.today().year - int(input("Ano de nascimento: "))
+print(f"O atleta tem {idade} anos.")
+# informa a categoria conforme a idade
 if idade > 25:
-	categ = 'Master'
+    categ = "Master"
 elif idade > 19:
-	categ = 'Sênior'
+    categ = "Sênior"
 elif idade > 14:
-	categ = 'Júnior'
+    categ = "Júnior"
 elif idade > 9:
-	categ = 'Mirim'
+    categ = "Mirim"
 else:
-	categ = 'Infantil'
-print(f'Classificação: {categ}.')
+    categ = "Infantil"
+print(f"Classificação: {categ}.")

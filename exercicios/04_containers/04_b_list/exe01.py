@@ -1,30 +1,30 @@
 """
-Faça um programa que leia 5 valores numéricos e guarde-os em uma lista. No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista. 
+Faça um programa que leia 5 valores numéricos e guarde-os em uma lista. No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.
 """
 
 lista = []
 
-#armazenar diversos valores em uma lista.
-for pos in range(1,6):
-	num = [int(input(f'Digite um valor para a posição {pos}: '))]
-	lista += num
+# armazenar diversos valores em uma lista.
+for pos in range(1, 6):
+    num = [int(input(f"Digite um valor para a posição {pos}: "))]
+    lista += num
 
-#escrever os valores.
-print('Os números foram: ', end='')
+# escrever os valores.
+print("Os números foram: ", end="")
 for valor in lista:
-	print(valor, end=' ')
+    print(valor, end=" ")
 
-#armazenar o maior e o menor valor.
+# armazenar o maior e o menor valor.
 max = max(lista)
 min = min(lista)
 
-#informar o maior valor e as posições.
-print(f'\nO maior valor digitado é {max} nas posições', end=' ')
+# informar o maior valor e as posições.
+print(f"\nO maior valor digitado é {max} nas posições", end=" ")
 for pos, val in enumerate(lista):
-	if max == val:
-		print(f'{pos + 1}', end='...')
-#informar o menor valor e as posições.
-print(f'\nO menor valor digitado é {min} nas posições', end=' ')
+    if max == val:
+        print(f"{pos + 1}", end="...")
+# informar o menor valor e as posições.
+print(f"\nO menor valor digitado é {min} nas posições", end=" ")
 for po, va in enumerate(lista):
-	if min == va:
-		print(f'{po + 1}', end='...')
+    if min == va:
+        print(f"{po + 1}", end="...")

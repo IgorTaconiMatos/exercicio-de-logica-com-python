@@ -5,12 +5,12 @@ Escreva um programa que leia dois números inteiros e compare-os. mostrando na t
 - Não existe valor maior, os dois são iguais
 """
 
-num1 = int(input('Primeiro número: '))
-num2 = int(input('Sedundo número: '))
-#fazer as verificações.
+num1 = int(input("Primeiro número: "))
+num2 = int(input("Sedundo número: "))
+# fazer as verificações.
 if num1 > num2:
-	print('O PRIMEIRO valor é maior.')
+    print("O PRIMEIRO valor é maior.")
 elif num2 > num1:
-	print('O SEGUNDO valor é maior.')
+    print("O SEGUNDO valor é maior.")
 else:
-	print('Os dois valores são IGUAIS')
+    print("Os dois valores são IGUAIS")

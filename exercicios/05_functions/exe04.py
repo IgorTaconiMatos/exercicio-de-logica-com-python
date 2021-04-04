@@ -2,16 +2,18 @@
 Faça um programa que tenha uma função chamada maior(), que receba vários parâmetros com valores inteiros. Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 """
 
-#definir função com *args parâmetros
+
+# definir função com *args parâmetros
 def maior(*args):
-	maior = 0
-	#veridicar cada parâmetro passado
-	for verifica in args:
-		#armazenar o maior valor
-		if verifica > maior:
-			maior = verifica
-	#retornar o maior valor
-	return maior
+    maior = 0
+    # veridicar cada parâmetro passado
+    for verifica in args:
+        # armazenar o maior valor
+        if verifica > maior:
+            maior = verifica
+    # retornar o maior valor
+    return maior
+
 
 print(maior(12, 30, 26, 18, 1, 4, 50, 2))
 print(maior(1, 23, 34, 23, 21, 10, 32))
