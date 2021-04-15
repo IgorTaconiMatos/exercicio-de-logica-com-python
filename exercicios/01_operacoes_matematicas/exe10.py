@@ -1,7 +1,3 @@
-"""
-Peça ao usuário a altura 4 pessoas e calcule a média.
-"""
-
 pessoa1 = float(input("Altura da 1a pessoa: "))
 pessoa2 = float(input("Altura da 2a pessoa: "))
 pessoa3 = float(input("Altura da 3a pessoa: "))
