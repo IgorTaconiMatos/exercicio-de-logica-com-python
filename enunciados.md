@@ -1,12 +1,12 @@
 # Enunciados
 
 ## exe001
-Desenvolver a lógica para um programa que efetue o cálculo da área de uma circunferência, apresentando a medida da área calculada.  
+Desenvolver a lógica para um programa que efetue o cálculo da área de uma circunferência, apresentando a medida da área calculada.
 formula: A = 3.14159 x R²
 
 ## exe002
-Construir um programa que efetue o cálculo do salário líquido de um professor.   
-Para fazer este programa, você deverá possuir alguns dados, tais como: valor da hora aula, número de horas trabalhadas no mês e percentual de desconto do INSS.   
+Construir um programa que efetue o cálculo do salário líquido de um professor.
+Para fazer este programa, você deverá possuir alguns dados, tais como: valor da hora aula, número de horas trabalhadas no mês e percentual de desconto do INSS.
 Em primeiro lugar, você deve estabelecer qual será o seu salário bruto para efetuar o desconto a ter o valor do salário líquido.
 
 ## exe003
@@ -28,7 +28,7 @@ Faça um algoritmo que leia o salário de um funcionário e mostre seu novo sal�
 Escreva um programa que converta uma temperatura digitando em graus Celsius e converta para graus Fahrenheit.
 
 ## exe009
-Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.   
+Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.
 Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.
 
 ## exe010
@@ -372,3 +372,55 @@ Faça um algoritmo que receba dois números e descubra seu MMC.
 
 ## exe094
 Faça un algoritmo que calcule a soma dos N primeiros números primos, sendo N definido pelo usuário.
+
+## exe095
+Crie uma função que recebe uma string com qualquer sequência dos seguintes caracteres
+'[', '{', '(', ')', '}', ']'
+e retorne se a sequência é válida ou não.
+Uma sequência é válida se as chaves, parênteses e colchetes abrem e fecham coretamente.
+
+Exemplo:
+{ [ ( ) ( ) { } [ ] ] { } } - é uma sequência válida
+{ [ ( ( ) ] } - não é uma sequência válida (há um parêntese posicionado incoretamente)
+{ } [ ] ( ) - é uma sequência válida
+( ( ) { } [ [ ] ) - não é uma sequência válida (há um colchete posicionado incoretamente)
+
+## exe096
+Considere um conjunto de pessoas aposentadas, onde cada pessoa começou a trabalhar em X e se aposentou em Y.
+Crie um função que receba uma matriz na seguinte estrutura
+[[x1, y1], [x2, y2] ... [xn, yn]]
+e calcule em qual/quais ano/anos houve mais pessoas trabalhando.
+
+Considere:
+* Os valores de X como o ano que os indivíduos começaram a trabalhar (x>0, x<y);
+* Os valores de Y como o ano que os indivíduos se aposentaram (y>0);
+* O ano de início deve ser considerado como ano trabalhado;
+* O ano de aposentadoria deve ser considerado como ano trbalhado.
+
+Exemplo:
+Input [[1969, 2005], [1945, 2008], [1938, 1999], ...]
+
+## exe097
+ João está trabalhando em uma mina, tentando retirar o máximo que consegue de
+ diamantes "<>". Ele deve excluir todas as particulas de areia "." do processo
+e a cada retirada de diamante, novos diamantes poderão se formar. Se ele tem
+como uma entrada .<...<<..>>....>....>>>., três diamantes são formados.
+O primeiro é retirado de <..>, resultando  .<...<>....>....>>>. Em seguida o
+segundo diamante é retirado, restando .<.......>....>>>. O terceiro diamante é
+então retirado, restando no final .....>>>., sem possibilidade de extração de
+novo diamante.
+
+    Entrada
+ Deve ser lido um valor inteiro N que representa a quantidade de casos de
+ teste.
+ Cada linha a seguir é um caso de teste que contém até 1000 caracteres,
+ incluindo "<,>, ."
+
+    Saída
+ Você deve imprimir a quantidade de diamantes possíveis de serem extraídos em
+ cada caso de entrada.
+
+*Exemplo de Entrada 	|  *Exemplo de Saída
+2                       |  3
+<..><.<..>>             |  1
+<<<..<......<<<<....>   |
